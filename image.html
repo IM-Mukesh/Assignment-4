@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image of Assignment-4</title>
+    <style>
+        body{
+            background-color: rgb(224, 218, 218);
+        }
+        .container{
+            display: flex;
+            height: 60vh;
+            justify-content: space-between;
+        }
+        .para{
+            flex-basis: 30%;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            padding: 10vh 5vh;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin: 2vh 3vw;
+        }
+        .para:hover{
+            background-color: black;
+            color: #fff;
+            border-radius: 10px;
+        }
+        img{
+            flex-basis: 25%;
+            width: 500;
+            height: 500;
+        }
+        @media screen and (max-width: 668px) {
+            .container{
+                flex-direction: column;
+            }
+            .container div{
+                width: 80%;
+                /* border: 3px solid red; */
+                margin: 1vh auto;
+            }
+            .para{
+                letter-spacing: normal;
+                word-spacing: normal;
+                padding: 2px auto;
+                font-size: 1.2rem;
+                margin: 0;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+            }
+            img{
+                width: 98%;
+                border-radius: 10px;
+            }
+            .div-1{
+                order: 2;
+            }
+            .div-2{
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <p class="para">Sushant Singh Rajput was awarded the Critic's Best Actor award at the Dadasaheb Phalke International
+                 Film Festival Awards 2021. Sushant died in June last year. Sushant Singh Rajput got the Critics Best Actor award
+                  at the Dadasaheb Phalke International Film Festival Awards 2021.</p>
+        </div>
+        <div class="div-2">
+            <img src="https://www.bollywoodhungama.com/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-30-at-4.34.13-PM.jpeg" alt="Sushant signt Rajput">
+        </div>
+    </div>
+</body>
+</html>
